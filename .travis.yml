@@ -7,6 +7,10 @@ env:
 
 cache: npm
   
+before_install: 
+  - "npm config set spin false"
+  - npm i -g now 
+
 install:
   - npm install
 
